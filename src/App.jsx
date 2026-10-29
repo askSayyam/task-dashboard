@@ -1,12 +1,12 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import Header from './components/functional/Header';
-import CardWrapper from './components/functional/CardWrapper';
-import TaskForm from './components/functional/TaskForm';
-import TaskList from './components/functional/TaskList';
-import Filters from './components/functional/Filters';
-import MetricsSummary from './components/functional/metricsSummary';
-import ActivityLogger from './components/class/activitylogger';
-import useLocalStorage from './hooks/useLocalStorage';
+import Header from "./components/functional/Header";
+import CardWrapper from "./components/functional/CardWrapper";
+import TaskForm from "./components/functional/TaskForm";
+import TaskList from "./components/functional/TaskList";
+import Filters from "./components/functional/Filters";
+import useLocalStorage from "./hooks/useLocalStorage";
+import MetricsSummary from "./components/functional/MetricsSummary";
+import ActivityLogger from "./components/class/ActivityLogger";
 
 function App() {
   const [tasks, setTasks] = useLocalStorage('tasks', []);
